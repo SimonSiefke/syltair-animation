@@ -6,7 +6,7 @@
   "scripts": {
     "start": "poi index.ts",
     "dev": "poi index.ts",
-    "build": "poi build index.ts --out-dir docs"
+    "build": "poi build index.ts"
   },
   "keywords": [],
   "author": "",

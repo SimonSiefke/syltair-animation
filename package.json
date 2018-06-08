@@ -4,19 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "poi index.ts",
-    "dev": "poi index.ts",
-    "build": "poi build index.ts"
+    "start": "poi src/index.ts",
+    "dev": "poi src/index.ts",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
     "axios": "^0.18.0",
     "gsap": "^2.0.1",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "ts-loader": "^4.3.1",
+    "typescript": "^2.9.1",
+    "webpack": "^4.10.2"
   },
   "devDependencies": {
-    "poi": "^10.2.3"
+    "poi": "^10.2.3",
+    "webpack-cli": "^3.0.3"
   }
 }

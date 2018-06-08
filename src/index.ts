@@ -1,4 +1,4 @@
-import { animateMap, getAnimatableImages } from './animateHelperFunctions.ts'
+import { animateMap, getAnimatableImages } from './animateHelperFunctions'
 
 async function init() {
   const animatableImages = await getAnimatableImages()

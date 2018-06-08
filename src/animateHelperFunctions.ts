@@ -1,6 +1,6 @@
 import * as $ from 'jquery'
-import { TimelineMax, TweenLite } from 'gsap'
-import { inlineSvgImage } from './util.ts'
+import { TimelineMax } from 'gsap'
+import { inlineSvgImage } from './util'
 /**
  * initializes the images by turning them into inline svg elements
  */

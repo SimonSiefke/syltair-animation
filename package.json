@@ -1,0 +1,21 @@
+{
+  "name": "syltair",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "poi index.ts",
+    "dev": "poi index.ts",
+    "build": "poi build index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^2.0.1",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "poi": "^10.2.3"
+  }
+}

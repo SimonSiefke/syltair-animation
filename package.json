@@ -14,7 +14,6 @@
   "dependencies": {
     "axios": "^0.18.0",
     "gsap": "^2.0.1",
-    "gsap-then": "^2.1.1",
     "jquery": "^3.3.1"
   },
   "devDependencies": {

@@ -2,20 +2,23 @@ import * as $ from 'jquery'
 import { TimelineMax } from 'gsap'
 import { inlineSvgImage } from './util'
 
+const animatableImageSelectors = [
+  '.page-template-starter .mappa-hintergrund img',
+  '.home .mappa-hintergrund img',
+]
+
 /**
  * initializes the images by turning them into inline svg elements
  */
 export async function getAnimatableImages() {
-  const allImages = [
-    ...Array.from(
-      document.querySelectorAll('.page-template-charter .mappa-hintergrund img')
-    ),
-    ...Array.from(document.querySelectorAll('.home .mappa-hintergrund img')),
-  ]
-  const animateableImages = allImages.filter(image =>
-    image.classList.contains('animatable')
+  const animatableImages = animatableImageSelectors.reduce(
+    (total, selector) => [
+      ...total,
+      ...Array.from(document.querySelectorAll(selector)),
+    ],
+    []
   )
-  const inlinePromises = animateableImages.map(inlineSvgImage)
+  const inlinePromises = animatableImages.map(inlineSvgImage)
   return Promise.all(inlinePromises)
 }
 

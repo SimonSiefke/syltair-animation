@@ -3,7 +3,6 @@ import { animateMap, getAnimatableImages } from './animateHelperFunctions'
 
 async function init() {
   const animatableImages = await getAnimatableImages()
-  console.log(animatableImages)
   animatableImages.forEach(animateMap)
 }
 

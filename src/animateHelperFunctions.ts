@@ -3,7 +3,7 @@ import { TimelineMax } from 'gsap'
 import { inlineSvgImage } from './util'
 
 const animatableImageSelectors = [
-  '.page-template-starter .mappa-hintergrund img',
+  '.page-template-charter .mappa-hintergrund img',
   '.home .mappa-hintergrund img',
 ]
 
